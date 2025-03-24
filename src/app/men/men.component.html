@@ -1,0 +1,15 @@
+<header></header>
+
+<div class="container">
+    <h1>Exercices pour les biceps</h1>
+    @for (exercise of exercises; track exercise.name) {
+      <div class="exercise">
+        <h2>{{ exercise.name }}</h2>
+        <p>Type: {{ exercise.type }}</p>
+        <p>Muscle: {{ exercise.muscle }}</p>
+        <p>Equipment: {{ exercise.equipment }}</p>
+        <p>Difficulty: {{ exercise.difficulty }}</p>
+        <p>Instructions: {{ exercise.instructions }}</p>
+      </div>
+    }
+  </div>

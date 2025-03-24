@@ -1,0 +1,36 @@
+<main class="main">
+    <div class="container">
+      <div class="product">
+        <div class="product-image">
+          <img src="assets/images/sneaker8.webp" alt="Nike Air Force 1">
+          <div class="thumbnails">
+            <img src="assets/images/sneaker8.webp" alt="Thumbnail 1" class="selected">
+            <img src="assets/images/sneaker11.webp" alt="Thumbnail 2">
+            <img src="assets/images/sneaker9.webp" alt="Thumbnail 3">
+            <img src="assets/images/sneaker10.webp" alt="Thumbnail 4">
+          </div>
+        </div>
+        <div class="product-details">
+          <h2 class="company">Sneaker Company</h2>
+          <h1 class="title">Fall Limited Edition Sneakers</h1>
+          <p class="description">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.</p>
+          <div class="price">
+            <span class="current-price">$125.00</span>
+            <span class="discount">50%</span>
+          </div>
+          <div class="old-price">$250.00</div>
+          <div class="actions">
+            <div class="quantity">
+              <button>-</button>
+              <span>0</span>
+              <button>+</button>
+            </div>
+            <button class="add-to-cart">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div *ngIf="isOffline">
+    <p>Vous êtes hors ligne. Les données affichées peuvent être limitées ou obsolètes.</p>
+  </div>

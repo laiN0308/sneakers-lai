@@ -1,0 +1,61 @@
+.header {
+    background-color: #f8f8f8;
+    padding: 20px 0;
+  
+    .container {
+      width: 80%;
+      margin: 0 auto;
+    }
+  
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .logo {
+      font-weight: bold;
+      font-size: 1.5em;
+      color: #333; // Ajout de la couleur du texte
+    }
+  
+    .nav {
+      display: flex;
+      align-items: center; // Alignement vertical au centre
+      a {
+        margin-left: 20px;
+        text-decoration: none;
+        color: #333;
+        padding: 8px 12px; // Ajout de padding pour l'espacement
+        border-radius: 5px; // Ajout de bordures arrondies
+        transition: background-color 0.3s ease; // Transition pour l'effet de survol
+  
+        &:hover {
+          background-color: #e0e0e0; // Couleur de fond au survol
+        }
+        &.active {
+            color: #FFA500; /* Couleur orange, comme dans le design */
+            font-weight: bold; /* Optionnel : pour mettre en évidence */
+            /* Optionnel : ajouter d'autres styles pour l'état actif */
+        }
+      }
+    }
+  
+    .user-actions {
+      display: flex;
+      align-items: center;
+  
+      img {
+        width: 24px;
+        height: 24px;
+        margin-left: 15px; // Réduction de l'espacement
+        cursor: pointer; // Ajout du curseur pour l'interactivité
+      }
+  
+      .profile-icon {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+      }
+    }
+  }

@@ -1,0 +1,50 @@
+@use "sass:color";
+@use "sass:math";
+
+$primary-color: #FFA500;
+$light-gray: #f8f8f8;
+$dark-gray: #333;
+$text-gray: #666;
+$border-color: #ddd;
+$discount-bg: #FFECB3;
+$white: #fff;
+
+$spacing-small: 10px;
+$spacing-medium: 20px;
+$spacing-large: 30px;
+
+$base-font: sans-serif;
+$heading-font: sans-serif;
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: $spacing-medium;
+  font-family: $base-font;
+  color: $dark-gray;
+}
+
+.exercise {
+  border: 1px solid $border-color;
+  padding: $spacing-medium;
+  margin-bottom: $spacing-medium;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  h2 {
+    color:$primary-color;
+    margin-bottom: $spacing-small;
+    font-family: $heading-font;
+  }
+
+  p {
+    color: $text-gray;
+    line-height: 1.6;
+  }
+}
+
